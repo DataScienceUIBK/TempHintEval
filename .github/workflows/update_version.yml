@@ -31,7 +31,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Update version in README to $(cat your_package_name/_version.py | grep __version__ | cut -d '"' -f 2)"
+          git commit -m "Update version in README to $(cat version/_version.py | grep __version__ | cut -d '"' -f 2)"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
