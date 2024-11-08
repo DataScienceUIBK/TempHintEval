@@ -1,7 +1,7 @@
 import re
 from pathlib import Path
 
-version_file = Path("your_package_name/_version.py")
+version_file = Path("version/_version.py")
 readme_file = Path("README.md")
 
 # Extract version
