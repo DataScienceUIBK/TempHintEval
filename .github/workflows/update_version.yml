@@ -24,7 +24,7 @@ jobs:
           pip install setuptools_scm
 
       - name: Run version update script
-        run: python version.py
+        run: python version/version.py
 
       - name: Commit and push changes
         run: |
