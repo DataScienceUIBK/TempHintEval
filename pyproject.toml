@@ -47,6 +47,7 @@ readme = {file = ["README-PyPI.md"], content-type = "text/markdown"}
 
 [tool.setuptools_scm]
 version_scheme = "guess-next-dev"
+write_to = "hinteval/_version.py"
 
 [project.urls]
 Documentation = "https://hinteval.readthedocs.io/"
