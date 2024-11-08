@@ -1,28 +1,31 @@
-# Development Guide for ragas
+# Development Guide for HintEval
 
-This document provides guidelines for developing and contributing to the ragas project.
+This document provides guidelines for developing and contributing to the HintEval project.
 
 ## Setting up the Development Environment
 
 1. **Fork the Repository**
-   Fork the [ragas repository](https://github.com/explodinggradients/ragas) on GitHub.
+   Fork the [HintEval repository](https://github.com/DataScienceUIBK/HintEval) on GitHub.
 
 2. **Clone your Fork**
    ```
-   git clone https://github.com/YOUR_USERNAME/ragas.git
-   cd ragas
+   git clone https://github.com/YOUR_USERNAME/HintEval.git
+   cd HintEval
    ```
 
 3. **Set up a Virtual Environment**
    ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   conda create -n hinteval_env python=3.11.9 --no-default-packages
+   conda activate hinteval_env
    ```
 
 4. **Install Dependencies**
+
+   You'll need PyTorch 2.4.0 for HintEval. Refer to the [PyTorch installation page](https://pytorch.org/get-started/previous-versions/) for platform-specific installation commands. If you have access to GPUs, it's recommended to install the CUDA version of PyTorch, as many of the evaluation metrics are optimized for GPU use.
+   
+   Once PyTorch 2.4.0 is installed, you can install HintEval via pip:
    ```
-   pip install -U setuptools  # Required on newer Python versions (e.g., 3.11)
-   pip install -e ".[dev]"
+   pip install -e .
    ```
 
 ## Development Workflow
@@ -44,7 +47,7 @@ This document provides guidelines for developing and contributing to the ragas p
    ```
 
 4. **Create a Pull Request**
-   Go to the original ragas repository and create a new pull request from your feature branch.
+   Go to the original HintEval repository and create a new pull request from your feature branch.
 
 ## Coding Standards
 
@@ -53,28 +56,10 @@ This document provides guidelines for developing and contributing to the ragas p
 - Write docstrings for all functions, classes, and modules.
 - Ensure all tests pass before submitting a pull request.
 
-You can run the following command to check for code style issues:
-```bash
-make run-ci
-```
-
-Adding a `V=1` option makes the output more verbose, showing normally hidden commands, like so:
-```bash
-make run-ci V=1
-```
-
-## Running Tests
-
-To run the test suite:
-
-```bash
-make test
-```
-
 ## Documentation
 
 - Update documentation for any new features or changes to existing functionality.
-- Use [Google style](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html) for docstrings.
+- Use [NumPy style](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html#example-numpy) for docstrings.
 
 ## Submitting Pull Requests
 
@@ -83,4 +68,4 @@ make test
 3. Update documentation as necessary.
 4. Provide a clear description of the changes in your pull request.
 
-Thank you for contributing to ragas!
+Thank you for contributing to HintEval!
