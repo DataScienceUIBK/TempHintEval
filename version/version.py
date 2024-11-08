@@ -4,7 +4,6 @@ from pathlib import Path
 version_file = Path("version/_version.py")
 readme_file = Path("README.md")
 
-# Extract version
 version = None
 with version_file.open("r") as f:
     content = f.read()
@@ -12,13 +11,12 @@ with version_file.open("r") as f:
     if match:
         version = match.group(1)
 
-# Update README
 if version:
     with readme_file.open("r") as f:
         readme_content = f.read()
     
     # Modify or add the version text as needed
-    new_content = re.sub(r"(?<=Version: )\d+\.\d+\.\d+", version, readme_content)
+    new_content = re.sub(r"x\.y\.z", version, readme_content)
     
     with readme_file.open("w") as f:
         f.write(new_content)
