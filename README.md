@@ -80,7 +80,7 @@ Refer to our [documentation](http://hinteval.readthedocs.io/) to learn more.
 
 ## 🫂Contributors
 
-Community contributions are essential to our project, and we value every effort to improve it. From bug fixes to feature enhancements and documentation updates, your involvement makes a big difference, and we’re thrilled to have you join us!
+Community contributions are essential to our project, and we value every effort to improve it. From bug fixes to feature enhancements and documentation updates, your involvement makes a big difference, and we’re thrilled to have you join us! For more details, please refer to [development.](DEVELOPMENT.md)
 
 ### How to Contribute
 
