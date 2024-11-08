@@ -6,7 +6,8 @@
   <a href="http://hinteval.readthedocs.io/"><img src="https://img.shields.io/static/v1?label=Documentation&message=HintEval&color=20BEFF&logo=Read the Docs"></a>
   <a href=""><img src="https://img.shields.io/static/v1?label=Paper&message=ArXiv&color=green&logo=arXiv"></a>
   <a href="https://opensource.org/license/apache-2-0"><img src="https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=red"></a>
-  <a href="https://pypi.org/project/hinteval"><img src="https://img.shields.io/static/v1?label=Version&message=0.1.0&color=orange&logo=Python"></a>
+  ![Downloads](https://static.pepy.tech/badge/HintEval)
+  <a href="https://pypi.org/project/hinteval"><img src="https://img.shields.io/static/v1?label=Version&message=0.0.1&color=orange&logo=Python"></a>
 </p>
 
 **HintEval** is a powerful framework designed for both generating and evaluating hints. These hints serve as subtle clues, guiding users toward the correct answer without directly revealing it. As the first tool of its kind, HintEval allows users to create and assess hints from various perspectives. 
